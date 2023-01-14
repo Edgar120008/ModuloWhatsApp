@@ -6,7 +6,7 @@ const client = new Client();
 
 export const generateClient = async(socket) => {
 
-    // console.log('in client generator')
+    console.log(client.options)
     client.on('qr', qr => {
         qrcode.generate(qr, { small: true });
         // console.log(qr)
